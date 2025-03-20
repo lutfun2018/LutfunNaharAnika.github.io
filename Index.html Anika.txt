@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutfun Nahar Anika - About Me</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #8B0000, #000000);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(139, 0, 0, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        header nav a:hover {
+            color: crimson;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 120px auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .container img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid white;
+        }
+        
+        .buttons {
+            margin-top: 20px;
+        }
+        
+        .buttons a {
+            padding: 10px 20px;
+            background: white;
+            color: crimson;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 5px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+        
+        .buttons a:hover {
+            background: black;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background: rgba(139, 0, 0, 0.9);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <header>
+        <div class="logo">Lutfun Nahar Anika</div>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container" id="about">
+        <img src="/mnt/data/image.png" alt="Lutfun Nahar Anika">
+        <h1>Lutfun Nahar Anika</h1>
+        <p>Entrepreneur | Educator | Mathematician</p>
+        <p>I am passionate about education, student development, and academic management. I believe in consistency, patience, and perseverance.</p>
+        <div class="buttons">
+            <a href="#">My Books</a>
+            <a href="#">Download CV</a>
+            <a href="#">Contact Me</a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Connect with me: 
+            <a href="#">Facebook</a> | 
+            <a href="#">YouTube</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+    
+    <script>
+        particlesJS.load('particles', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json');
+        ScrollReveal().reveal('.container', { delay: 300, distance: '50px', origin: 'bottom', duration: 800 });
+    </script>
+</body>
+</html>
